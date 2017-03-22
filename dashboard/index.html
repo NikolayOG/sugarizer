@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/4.0.2/bootstrap-material-design.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.2/material.indigo-pink.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container my">
+        <div class="nav-side-menu">
+            <div class="brand">Welcome back, Admin</div>
+            <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+
+            <div class="menu-list">
+
+                <ul id="menu-content" class="menu-content collapse out">
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-dashboard fa-lg"></i> Dashboard
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-user fa-lg"></i> Users
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-book fa-lg"></i> Journals
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-users fa-lg"></i> Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container statistics">
+            <div class="row users">
+                <!-- Users -->
+                <div class="card">
+                    <div class="round-iconholder">
+                        <div class="icon">
+                            <i class="material-icons md-35 white">face</i>
+                        </div>
+                    </div>
+                    <div class="card-text">
+                        <span id="numberOfUsers" class="user-number"></span> <span> users</span>
+
+                    </div>
+                </div>
+                <!-- End Users -->
+
+                <div class="card journals">
+                    <div class="round-iconholder">
+                        <div class="icon">
+                            <i class="material-icons md-35 white">local_library</i>
+                        </div>
+                    </div>
+                    <div class="card-text">
+                        <span class="user-number journal-entries">0</span> <span> journals entries</span>
+
+                    </div>
+                </div>
+
+                <!--<div class="user-list">-->
+                    <div class="list-group">
+                        <div class="users-list-card mdl-card mdl-shadow--2dp">
+                            <div class="mdl-card__title">
+                                <h2 class="mdl-card__title-text">Users</h2>
+                            </div>
+                            <div class="mdl-card__menu">
+                                <button id="sortBy" class="mdl-button mdl-button--icon">
+                                    <i class="material-icons">more_vert</i>
+                                </button>
+                                <ul id="sortBy-popup" class="mdl-menu mdl-menu--bottom-right mdl-js-menu" for="sortBy">
+                                    <li class="mdl-menu__item">Top Users</li>
+                                    <li class="mdl-menu__item">Online Users</li>
+                                </ul>
+
+                            </div>
+                        <ul class="mdl-list search">
+                            <li class="mdl-list__item ">
+                                <span class="mdl-list__item-primary-content">
+                                    <i class="material-icons mdl-list__item-icon">search</i>
+                                        <div class="mdl-textfield mdl-js-textfield">
+                                            <input id="search-criteria" class="mdl-textfield__input search" type="text" id="sample1" placeholder="Search a user...">
+                                        </div>
+                                </span>
+                            </li>
+                        </ul>
+
+                        <div id="usersAPI">
+
+                        </div>
+
+                    </div>
+                <!--</div>-->
+
+            </div>
+        </div>
+    </div>
+        </div>
+
+
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="https://code.getmdl.io/1.1.2/material.min.js"></script>
+
+    <!-- Custom Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>
