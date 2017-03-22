@@ -11,9 +11,6 @@ $.ajax({
             var userName = data[userIndex].name;
             $("#usersAPI").append('<a href="#" class="userName list-group-item list-group-item-action">' + userName + "</a>")
 
-            // $(".users").find("select").append("<option " + "class=names" + ">" + data[userIndex].name + "</option>");
-            // // use the private_journal id
-            // $(".users").find("option:nth-child(" + userIndex+1 + ")").attr("id", data[userIndex].private_journal);
             $.ajax({
                 url: "http://localhost/sugarizer/api/journal/" + data[userIndex].private_journal
             })
@@ -26,12 +23,7 @@ $.ajax({
         }
     });
 
-// $.ajax({
-//     url: "http://localhost/sugarizer/api/journal/"
-// })
-//     .done(function (data) {
-//         console.log(data.length)
-//     });
+
 
 
 
