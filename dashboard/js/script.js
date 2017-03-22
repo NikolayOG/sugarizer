@@ -19,7 +19,6 @@ $.ajax({
                     $(".journal-entries").text(journalEntries);
                 });
 
-            // if (data[userIndex].private_journal)
         }
     });
 
